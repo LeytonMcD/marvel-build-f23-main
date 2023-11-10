@@ -11,12 +11,22 @@ body {
 }
 header{
     background-color: rgb(227, 231, 18);
-    padding: 10px 0;
+    padding: 15px 0;
 }
-a {
-    text-decoration: none;
+#main-logo {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 3px 3px 5px rgba(0,0,0,.3);
 }
 
+#character_nav{
+background-color: #000;
+background-image: url(../images/background.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-blend-mode: multiply;
+}
 .characters{
     list-style-type: none;
     padding: 0;
@@ -41,20 +51,9 @@ a {
 }
 .characters li h5 {
     color: white;
+    padding: 12px 8px;
 }
-#main-logo{
-    width:300px ;
-    display: block ;
-    margin: 0 auto ;
-    box-shadow: 3px 3px 5px rgb(5, 93, 86);
-}
-#character_nav {
-    background-color:#065122;
-    background-image: url('../images/background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: luminosity;
-}
+
 article, #instructions {
     padding: 20px;
 }
@@ -63,14 +62,14 @@ article h3,#instructions h3 {
     text-align:center;
     margin-bottom: 14px;
 }
-article p, #instructions{
+article p, #instructions p {
     font-size: 18px;
     text-align: center;
 }
 .sprite{
     width: 150px;
     height: 150px;
-    background-image: url('../images/spritesheet.jpg')
+    background-image: url('../images/spritesheethw2.png')
 }
 #morty {background-position: -150px 0};
 #summer {background-position: -300px 0};
@@ -83,7 +82,7 @@ article p, #instructions{
 }
 footer{
     text-align: center;
-    padding: 20px;
+    padding: 20px 0 ;
 }
 .sticky_footer{ 
     height: 80px;
@@ -100,17 +99,37 @@ footer{
     background-color: rgba(0, 0, 0, 0.716);
     background-image: url('../images/Rick_Sanchez_lb_bg.png');
     background-repeat: no-repeat;
-    background-size: 55vh;
+    background-size: 30vh;
     background-position: 40px bottom;
     display: none;
  }
+ #lightbox1 {
+    background-image: url('../images/Rick_Sanchez_lb_bg.png');}
+#lightbox2 {
+   background-image: url('../images/Morty_Smith_LB_BG.png'); 
+}
+
+#lightbox3 {
+    background-image: url('../images/Summer_Smith_LB_BG.png');
+}
+
+#lightbox4 {
+    background-image: url('../images/Jerry_Smith_LB_BG.png');}
+ #lightbox5 {
+        background-image: url('../images/mr_goldenfold_lb_bg.jpg');}
+ #lightbox6 {
+            background-image: url('../images/the_devil_lb_bg.jpeg');}
+
+
 
  .lightbox_close {
-    color: white;
     position: absolute;
     top: 20px;
     right: 5%;
+
+    color: white;
     font-size: 40px;
+
     text-decoration: none;
     font-weight: bolder;
 
@@ -145,20 +164,6 @@ footer{
 
  .lightbox:target {
     display: block;
+ }
 
- }
- #lightbox2 {
-    background-image: url('../images/Morty_Smith_LB_BG.png');
- }
- #lightbox3 {
-    background-image: url('../images/Summer_Smith_LB_BG.png');
- }
-#lightbox4 {
-        background-image: url('../images/Jerry_Smith_LB_BG.png');
-}
- #lightbox5 {
-            background-image: url('../images/mr_goldenfold_lb_bg.jpg');
- }
- #lightbox6 {
-    background-image: url('../images/the_devil_lb_bg.jpeg');
- }
+ 
